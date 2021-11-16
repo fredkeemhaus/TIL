@@ -1,18 +1,14 @@
 import sys
+a,b,c = map(int,sys.stdin.readline().split())
 
-A, B, C = map(int, sys.stdin.readline().split())
-
-print(A, B, C)
-
-
-def solution(a, b):
-    if b == 1: # b의 값이 1이면 a % C를 return한다.
-        return a % C
+def multi (a,n):
+    if n == 1:
+        return a % c
     else:
-        temp = solution(a, b // 2) # a^(b // 2)를 미리 구한다.
-        if b % 2 == 0:
-            return temp * temp % C # b가 짝수인 경우
+        tmp = multi(a,n // 2)
+        if n % 2 == 0:
+            return (tmp * tmp) % c
         else:
-            return temp * temp * a % C # b가 홀수인 경우
+            return (tmp  * tmp * a) % c
 
-print(solution(A, B))
+print(multi(a,b))

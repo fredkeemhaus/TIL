@@ -17,14 +17,12 @@ arr = [0] * n
 
 for i in range(n):
     t = tower_list[i]
-    while stack and tower_list[stack[-1]] < t:
-        stack.pop()
+    while stack and tower_list[stack[-1]] < t: # i번째 타워보다 높지 않으면,
+        stack.pop() # 높은 값이 나올때까지 pop
 
-    if stack:
-        arr[i] = stack[-1] + 1
+    if stack: # 스택이 차있다면,
+        arr[i] = stack[-1] + 1 # arr index에  stack index + 1값 넣기
 
     stack.append(i)
 
 print(' '.join(list(map(str, arr))))
-
-

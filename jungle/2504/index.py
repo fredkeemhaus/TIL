@@ -1,6 +1,6 @@
 s = input()
 
-def is_check(s):    # 올바른 괄호열인지 확인하는 함수
+def is_check(s):    # 제대로 닫히는지 체크
     stack = []
     flag = True
     
