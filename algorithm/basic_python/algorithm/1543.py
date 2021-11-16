@@ -1,3 +1,5 @@
 
 array = 'abaaaabaa'
 
+
+print(array)
