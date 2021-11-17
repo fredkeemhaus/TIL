@@ -47,13 +47,12 @@ print(qsort([1,6,5,2,3,10]))
 # def merge(left, right):
 #     # if left[lp] >
 
-def mergesplit(data):
-    if len(data) <= 1:
-        return data
+def split(data):
     medium = int(len(data) / 2)
-    left = mergesplit(data[:medium])
-    right = mergesplit(data[medium:])
 
-    return left, right
+    left = data[:medium]
+    right = data[:medium]
 
-print(mergesplit([1,25,7,24,6,8,9,10]))
+    print(left, right)
+
+print(split([3, 4, 1, 3, 2]))
