@@ -1,15 +1,15 @@
 let fs = `2 7
 2 3 2 3 1 2 7`;
 
-let input = fs.toString().trim().split('\n');
+let input = fs.toString().trim().split("\n");
 
 const [N, K] = input
   .shift()
-  .split(' ')
+  .split(" ")
   .map((x) => Number(x));
 const electicalGoods = input
   .shift()
-  .split(' ')
+  .split(" ")
   .map((x) => Number(x));
 const plugin = [];
 let answer = 0;
