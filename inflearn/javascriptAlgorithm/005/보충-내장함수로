@@ -1,0 +1,9 @@
+const solution = (arr) => {
+  let minNumber = Math.min(...arr);
+  let maxNumber = Math.max(...arr);
+  return [minNumber, maxNumber];
+};
+
+let arr = [5, 7, 1, 3, 2, 9, 11];
+solution(arr);
+
