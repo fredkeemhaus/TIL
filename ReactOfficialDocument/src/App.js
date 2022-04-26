@@ -9,8 +9,9 @@
 // import Functionalcomponent from "./components/2-5.State/FunctionalComponent";
 // import ClassComponent from "./components/2-6.LifeCycle/ClassComponent";
 // import Reducer from "./components/3-3.Hook/Reducer";
-
-import Welcomedialog from "./components/3-5.Composition/WelcomeDialog";
+// import Dialog from "./components/3-6.Composition2/Dialog";
+// import Welcomedialog from "./components/3-5.Composition/WelcomeDialog";
+import Thankyoudialog from "./components/3-6.Composition2/ThankyouDialog";
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
       {/* <Uncontrolledcomponent /> */}
       {/* <State /> */}
       {/* <Reducer /> */}
-      <Welcomedialog />
+      {/* <Welcomedialog /> */}
+      {/* <Dialog /> */}
+      <Thankyoudialog />
     </div>
   );
 }
