@@ -1,7 +1,9 @@
-import "./App.css";
-import Event from "./components/2-7.Event/Event";
-import Condition from "./components/2-8.ConditionalRendering/Condition";
-import List from "./components/2-9.List/List";
+// import "./App.css";
+// import Uncontrolledcomponent from "./components/2-10.Form/Uncontrolledcomponent";
+import Controlledcomponent from "./components/2-10.Form/ControlledComponent";
+// import Event from "./components/2-7.Event/Event";
+// import Condition from "./components/2-8.ConditionalRendering/Condition";
+// import List from "./components/2-9.List/List";
 // import ClassComponent from "./components/2-5.State/ClassComponent";
 // import Functionalcomponent from "./components/2-5.State/FunctionalComponent";
 // import ClassComponent from "./components/2-6.LifeCycle/ClassComponent";
@@ -13,7 +15,9 @@ function App() {
       {/* <ClassComponent /> */}
       {/* <Event /> */}
       {/* <Condition /> */}
-      <List />
+      {/* <List /> */}
+      <Controlledcomponent />
+      {/* <Uncontrolledcomponent /> */}
     </div>
   );
 }
