@@ -13,8 +13,9 @@
 // import Welcomedialog from "./components/3-5.Composition/WelcomeDialog";
 // import Thankyoudialog from "./components/3-6.Composition2/ThankyouDialog";
 
-import Button from "./components/3-7.HOC/Button";
-import Input from "./components/3-7.HOC/Input";
+// import Button from "./components/3-7.HOC/Button";
+// import Input from "./components/3-7.HOC/Input";
+// import Memo from "./components/3-8.Memoization/Memo";
 
 function App() {
   return (
@@ -31,10 +32,11 @@ function App() {
       {/* <Welcomedialog /> */}
       {/* <Dialog /> */}
       {/* <Thankyoudialog /> */}
-      <Input />
+      {/* <Input />
       <br />
       <br />
-      <Button />
+      <Button /> */}
+      {/* <Memo /> */}
     </div>
   );
 }
