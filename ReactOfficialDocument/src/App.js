@@ -11,7 +11,10 @@
 // import Reducer from "./components/3-3.Hook/Reducer";
 // import Dialog from "./components/3-6.Composition2/Dialog";
 // import Welcomedialog from "./components/3-5.Composition/WelcomeDialog";
-import Thankyoudialog from "./components/3-6.Composition2/ThankyouDialog";
+// import Thankyoudialog from "./components/3-6.Composition2/ThankyouDialog";
+
+import Button from "./components/3-7.HOC/Button";
+import Input from "./components/3-7.HOC/Input";
 
 function App() {
   return (
@@ -27,7 +30,11 @@ function App() {
       {/* <Reducer /> */}
       {/* <Welcomedialog /> */}
       {/* <Dialog /> */}
-      <Thankyoudialog />
+      {/* <Thankyoudialog /> */}
+      <Input />
+      <br />
+      <br />
+      <Button />
     </div>
   );
 }
