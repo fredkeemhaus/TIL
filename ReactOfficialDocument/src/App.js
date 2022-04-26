@@ -8,8 +8,9 @@
 // import ClassComponent from "./components/2-5.State/ClassComponent";
 // import Functionalcomponent from "./components/2-5.State/FunctionalComponent";
 // import ClassComponent from "./components/2-6.LifeCycle/ClassComponent";
+// import Reducer from "./components/3-3.Hook/Reducer";
 
-import Reducer from "./components/3-3.Hook/Reducer";
+import Welcomedialog from "./components/3-5.Composition/WelcomeDialog";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <Controlledcomponent /> */}
       {/* <Uncontrolledcomponent /> */}
       {/* <State /> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      <Welcomedialog />
     </div>
   );
 }
