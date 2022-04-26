@@ -13,7 +13,9 @@
 // import Welcomedialog from "./components/3-5.Composition/WelcomeDialog";
 // import Thankyoudialog from "./components/3-6.Composition2/ThankyouDialog";
 
-import Example from "./components/3-10.Context/Example";
+import Example from "./components/3-11.Portal/Example";
+
+// import Example from "./components/3-10.Context/Example";
 
 // import Button from "./components/3-7.HOC/Button";
 // import Input from "./components/3-7.HOC/Input";
@@ -23,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <Example />
+      {/* <Example /> */}
       {/* <Functionalcomponent /> */}
       {/* <ClassComponent /> */}
       {/* <Event /> */}
