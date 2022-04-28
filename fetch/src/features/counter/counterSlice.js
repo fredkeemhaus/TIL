@@ -4,10 +4,7 @@ import axios from "axios";
 export const fetchIncrement = createAsyncThunk(
   "counter/fetchIncrement",
   async (value) => {
-    const response = await axios.put(
-      "http://localhost:3000/counter/increment",
-      { value: value }
-    );
+    const response = await axios.put("/counter/increment", { value: value });
     return response.data;
   }
 );
