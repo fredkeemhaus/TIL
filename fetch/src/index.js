@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import store from "./app/store";
 
 // Start the mocking conditionally.
-if (process.env.NODE_ENV === "production]") {
+if (process.env.NODE_ENV === "development") {
   const { worker } = require("./mocks/browser");
   worker.start();
 }
