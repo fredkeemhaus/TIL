@@ -3,7 +3,8 @@ import {
   action,
   autorun,
   computed,
-  makeAutoObservable,
+  flow,
+  //   makeAutoObservable,
   makeObservable,
   observable,
 } from "mobx";
@@ -13,14 +14,15 @@ class ObservableTodoStore {
   pendingRequests = 0;
 
   constructor() {
-    // makeObservable(this, {
-    //   todos: observable,
-    //   pendingRequests: observable,
-    //   completedTodosCount: computed,
-    //   report: computed,
-    //   addTodo: action,
-    // });
-    makeAutoObservable(this);
+    makeObservable(this, {
+      todos: observable,
+      pendingRequests: observable,
+      completedTodosCount: computed,
+      report: computed,
+      addTodo: action,
+      fetchData: flow,
+    });
+    // makeAutoObservable(this);
     autorun(() => console.log(this.report));
   }
 
